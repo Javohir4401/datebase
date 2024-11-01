@@ -1,14 +1,11 @@
-CREATE DATABASE IF NOT EXISTS home;
-USE home;
+CREATE DATABASE IF NOT EXISTS data;
+USE data;
 
-CREATE TABLE IF NOT EXISTS world (
-    column1 INT AUTO_INCREMENT PRIMARY KEY,
-    column2 VARCHAR(50) NOT NULL,
-    column3 VARCHAR(50) NOT NULL
+CREATE TABLE IF NOT EXISTS word (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    arrived_at VARCHAR(50) NOT NULL,
+    leaved_at VARCHAR(50) NOT NULL
 );
 
 
-INSERT INTO world (name, email) VALUES
-('John Doe', 'john@example.com'),
-('Jane Smith', 'jane@example.com'),
-('Alice Johnson', 'alice@example.com');
